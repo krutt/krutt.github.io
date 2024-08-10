@@ -1,15 +1,14 @@
 <script lang="ts" setup>
 /* components */
 import { Button } from '@/components/ui/button'
-import { Navbar } from '@/components'
+import { HeroCards, Navbar } from '@/components'
 
 /* vectors */
-import Blob from '@/assets/blob.svg'
 import { Github } from 'lucide-vue-next'
 import KruttCrest from '@/assets/krutt.svg'
 
 /* functions */
-let openGitHub = () => (window.open('https://github.com/krutt', '_blank', 'noreferrer, noopener'))
+let openGitHub = () => window.open('https://github.com/krutt', '_blank', 'noreferrer, noopener')
 </script>
 
 <template>
@@ -49,6 +48,6 @@ let openGitHub = () => (window.open('https://github.com/krutt', '_blank', 'noref
         </Button>
       </div>
     </div>
-    <Blob class="h-full w-full" />
+    <HeroCards class="w-full" />
   </section>
 </template>

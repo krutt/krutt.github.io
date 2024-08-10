@@ -1,0 +1,54 @@
+{
+  "dependencies": {
+    "@radix-icons/vue": "^1.0.0",
+    "@vue/reactivity": "^3.4.34",
+    "@vueuse/core": "^10.11.0",
+    "lucide-vue-next": "^0.394.0",
+    "pinia": "^2.1.7",
+    "radix-vue": "^1.9.3",
+    "vue": "^3.4.34"
+  },
+  "description": "crisp and precise introduction to Krutt collective",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.0",
+    "autoprefixer": "^10.4.20",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "prettier": "^3.3.3",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss": "^3.4.9",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5",
+    "vite-svg-loader": "^5.1.0",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vue-tsc": "^1.6.5"
+  },
+  "engines": {
+    "pnpm": "^9.2.0"
+  },
+  "name": "crisp",
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "endOfLine": "lf",
+    "printWidth": 100,
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false,
+    "vueIndentScriptAndStyle": false
+  },
+  "scripts": {
+    "dev": "vite",
+    "fmt": "prettier --write .",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "type": "module",
+  "version": "0.0.1"
+}

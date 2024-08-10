@@ -1,0 +1,53 @@
+<?xml version="1.000" encoding="utf-8"?>
+<svg
+  height="600"
+  version="1.1"
+  width="600"
+  xmlns="http://www.w3.org/2000/svg">
+  <rect fill="#403D39" height="100" width="100%" x="0" y="0"/>
+  <rect fill="#CCC5B9" height="100" width="100%" x="0" y="100"/>
+  <rect fill="#FFFCF2" height="100" width="100%" x="0" y="200"/>
+  <rect fill="#FCA311" height="100" width="100%" x="0" y="300"/>
+  <rect fill="#EB5E28" height="100" width="100%" x="0" y="400"/>
+  <rect fill="#BC13FE" height="100" width="100%" x="0" y="500"/>
+  <text
+    dominant-baseline="middle"
+    fill="white"
+    font-family="Arial"
+    font-size="16"
+    >
+    <tspan
+      x="50"
+      y="50"
+      >
+      403D39
+    </tspan>
+    <tspan
+      fill="black"
+      x="50"
+      y="150">
+      CCC5B9
+    </tspan>
+    <tspan
+      fill="black"
+      x="50"
+      y="250">
+      FFFCF2
+    </tspan>
+    <tspan
+      x="50"
+      y="350">
+      FCA311
+    </tspan>
+    <tspan
+      x="50"
+      y="450">
+      EB5E28
+    </tspan>
+    <tspan
+      x="50"
+      y="550">
+      BC13FE
+    </tspan>
+  </text>
+</svg>

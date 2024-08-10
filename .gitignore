@@ -1,0 +1,14 @@
+# Environment Variables
+**/.env
+
+# Node
+dist
+node_modules
+
+# MacOS
+**/.DS_Store
+
+# Workspace settings
+.idea
+.ignore
+.vscode

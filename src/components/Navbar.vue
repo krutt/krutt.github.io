@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+/* imports */
 import { Button } from '@/components/ui/button'
 import {
   NavigationMenu,
@@ -8,14 +9,17 @@ import {
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 import { ThemeToggle } from '@/components'
 
+/* vectors */
 import { Github, Menu } from 'lucide-vue-next'
 import KruttCrest from '@/assets/krutt.svg'
 
+/* schemas */
 interface RouteProps {
   href: string
   label: string
 }
 
+/* constants */
 const routes: RouteProps[] = [
   {
     href: '#aesir',
@@ -30,6 +34,9 @@ const routes: RouteProps[] = [
     label: 'Tayan',
   },
 ]
+
+/* functions */
+let openGitHub = () => (window.open('https://github.com/krutt', '_blank', 'noreferrer, noopener')))
 </script>
 
 <template>
@@ -39,10 +46,10 @@ const routes: RouteProps[] = [
     <NavigationMenu class="mx-auto">
       <NavigationMenuList class="container h-14 px-4 w-screen flex justify-between">
         <NavigationMenuItem class="font-bold flex">
-          <a rel="noreferrer noopener" href="/" class="ml-2 font-bold text-xl flex">
+          <RouterLink class="ml-2 font-bold text-xl flex" to="/">
             <KruttCrest class="inline h-10 mr-2 w-10" />
             Krutt
-          </a>
+          </RouterLink>
         </NavigationMenuItem>
         <span class="flex md:hidden">
           <Sheet>
@@ -73,14 +80,14 @@ const routes: RouteProps[] = [
                   variant="secondary"
                 >
                   <Github class="inline h-5 mr-2 w-5" />
-                  Github
+                  GitHub
                 </Button>
               </nav>
             </SheetContent>
           </Sheet>
         </span>
         <nav class="hidden md:flex gap-2">
-          <a
+          <Button
             :href="route.href"
             :key="route.label"
             class="text-[17px]"
@@ -88,14 +95,14 @@ const routes: RouteProps[] = [
             variant="ghost"
           >
             {{ route.label }}
-          </a>
+          </Button>
         </nav>
 
         <div class="hidden md:flex gap-2">
-          <a @click.prevent="() => void 0" class="border" variant="secondary">
+          <Button @click.prevent="openGitHub" class="border" variant="secondary">
             <Github class="inline h-5 mr-2 w-5" />
-            Github
-          </a>
+            GitHub
+          </Button>
           <ThemeToggle />
         </div>
       </NavigationMenuList>

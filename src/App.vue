@@ -7,9 +7,7 @@ import { Github } from 'lucide-vue-next'
 /* vectors */
 import KruttCrest from '@/assets/krutt.svg'
 
-let openGithubProfile = () => {
-  window.open('https://github.com/krutt', '_blank', 'noreferrer, noopener')
-}
+let openGitHub = () => (window.open('https://github.com/krutt', '_blank', 'noreferrer, noopener')))
 </script>
 
 <template>
@@ -43,7 +41,7 @@ let openGithubProfile = () => {
 
       <div class="space-y-4 md:space-y-0 md:space-x-4">
         <Button class="w-full md:w-1/3">Get Started</Button>
-        <Button @click.prevent="openGithubProfile" class="w-full md:w-1/3" variant="outline">
+        <Button @click.prevent="openGithub" class="w-full md:w-1/3" variant="outline">
           Github Profile
           <Github class="inline ml-2 w-5 h-5" />
         </Button>

@@ -1,13 +1,14 @@
-<script setup>
+<script lang="ts" setup>
 /* components */
 import { Button } from '@/components/ui/button'
 import { Navbar } from '@/components'
-import { Github } from 'lucide-vue-next'
 
 /* vectors */
+import { Github } from 'lucide-vue-next'
 import KruttCrest from '@/assets/krutt.svg'
 
-let openGitHub = () => (window.open('https://github.com/krutt', '_blank', 'noreferrer, noopener')))
+/* functions */
+let openGitHub = () => (window.open('https://github.com/krutt', '_blank', 'noreferrer, noopener'))
 </script>
 
 <template>
@@ -41,7 +42,7 @@ let openGitHub = () => (window.open('https://github.com/krutt', '_blank', 'noref
 
       <div class="space-y-4 md:space-y-0 md:space-x-4">
         <Button class="w-full md:w-1/3">Get Started</Button>
-        <Button @click.prevent="openGithub" class="w-full md:w-1/3" variant="outline">
+        <Button @click.prevent="openGitHub" class="w-full md:w-1/3" variant="outline">
           Github Profile
           <Github class="inline ml-2 w-5 h-5" />
         </Button>

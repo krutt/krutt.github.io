@@ -36,7 +36,7 @@ const routes: RouteProps[] = [
 ]
 
 /* functions */
-let openGitHub = () => (window.open('https://github.com/krutt', '_blank', 'noreferrer, noopener')))
+let openGitHub = () => (window.open('https://github.com/krutt', '_blank', 'noreferrer, noopener'))
 </script>
 
 <template>
@@ -47,7 +47,7 @@ let openGitHub = () => (window.open('https://github.com/krutt', '_blank', 'noref
       <NavigationMenuList class="container h-14 px-4 w-screen flex justify-between">
         <NavigationMenuItem class="font-bold flex">
           <RouterLink class="ml-2 font-bold text-xl flex" to="/">
-            <KruttCrest class="inline h-10 mr-2 w-10" />
+            <KruttCrest class="inline h-8 mr-2 w-8" />
             Krutt
           </RouterLink>
         </NavigationMenuItem>

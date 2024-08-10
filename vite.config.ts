@@ -1,5 +1,6 @@
 /* ~~/vite.config.js */
-import autoprefixer from 'autoprefixer'
+import autoImport from 'unplugin-auto-import/vite'
+import autoPrefixer from 'autoprefixer'
 import { defineConfig } from 'vite'
 import path from 'path'
 import svgLoader from 'vite-svg-loader'
@@ -7,13 +8,26 @@ import vue from '@vitejs/plugin-vue'
 import tailwind from 'tailwindcss'
 
 export default defineConfig({
-  base: '/tayan/',
+  base: '/',
   css: {
     postcss: {
-      plugins: [tailwind(), autoprefixer()],
+      plugins: [tailwind(), autoPrefixer()],
     },
   },
-  plugins: [svgLoader(), vue()],
+  plugins: [
+    autoImport({
+      include: [/\.[jt]sx?$/, /\.vue$/, /\.vue\?vue/],
+      imports: [
+        {
+          '@vueuse/core': ['useColorMode'],
+        },
+        'pinia',
+        'vue',
+      ],
+    }),
+    svgLoader(),
+    vue(),
+  ],
   publicDir: path.resolve(__dirname, './static'),
   resolve: {
     alias: {

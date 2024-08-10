@@ -1,5 +1,6 @@
 <script setup>
 /* vectors */
+import { Button } from '@/components/ui/button'
 import { Moon, Sun } from 'lucide-vue-next'
 
 /* composables */
@@ -10,7 +11,7 @@ let toggleTheme = () => (theme.value = theme.value !== 'dark' ? 'dark' : 'light'
 </script>
 <template>
   <div>
-    <a @click="toggleTheme">
+    <Button @click="toggleTheme" size="icon" variant="outline">
       <div v-if="theme == 'light'">
         <Moon />
       </div>
@@ -18,6 +19,6 @@ let toggleTheme = () => (theme.value = theme.value !== 'dark' ? 'dark' : 'light'
         <Sun />
       </div>
       <span class="sr-only">Toggle theme</span>
-    </a>
+    </Button>
   </div>
 </template>

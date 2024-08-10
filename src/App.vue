@@ -1,7 +1,7 @@
 <script setup>
 /* components */
 import { Button } from '@/components/ui/button'
-import { ThemeToggle } from '@/components'
+import { Navbar } from '@/components'
 import { Github } from 'lucide-vue-next'
 
 /* vectors */
@@ -13,6 +13,7 @@ let openGithubProfile = () => {
 </script>
 
 <template>
+  <Navbar />
   <section class="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
     <div class="text-center lg:text-start space-y-6">
       <main class="text-5xl md:text-6xl font-bold">

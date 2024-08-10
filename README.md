@@ -7,3 +7,5 @@
 [![Size](https://img.shields.io/github/repo-size/krutt/crisp)](https://github.com/krutt/tayan)
 [![Last commit](https://img.shields.io/github/last-commit/krutt/crisp/master)](https://github.com/krutt/crisp)
 [![Krutt banner](static/krutt-banner.svg)](https://github.com/krutt/crisp/blob/master/static/krutt-banner.svg)
+
+![blob](src/assets/blob.svg)

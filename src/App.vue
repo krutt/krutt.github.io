@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Navbar } from '@/components'
 
 /* vectors */
+import Blob from '@/assets/blob.svg'
 import { Github } from 'lucide-vue-next'
 import KruttCrest from '@/assets/krutt.svg'
 
@@ -48,6 +49,6 @@ let openGitHub = () => (window.open('https://github.com/krutt', '_blank', 'noref
         </Button>
       </div>
     </div>
-    <div class="shadow"></div>
+    <Blob class="h-full w-full" />
   </section>
 </template>

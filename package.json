@@ -23,7 +23,7 @@
     "vue": "^3.4.34",
     "vue-tsc": "^2.0.29"
   },
-  "description": "crisp and precise introduction to Krutt collective",
+  "description": "Crisp and precise introduction to Krutt collective",
   "engines": {
     "pnpm": "^9.2.0"
   },

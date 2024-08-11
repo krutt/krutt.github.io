@@ -28,7 +28,7 @@
   "engines": {
     "pnpm": "^9.2.0"
   },
-  "name": "crisp",
+  "name": "krutt-github-io",
   "prettier": {
     "arrowParens": "avoid",
     "bracketSpacing": true,

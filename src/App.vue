@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 /* components */
 import { Button } from '@/components/ui/button'
-import { HeroCards, Navbar } from '@/components'
+import { HeroCards, Navbar, Sponsors } from '@/components'
 
 /* vectors */
 import { Github } from 'lucide-vue-next'
@@ -18,20 +18,20 @@ let openGitHub = () => window.open('https://github.com/krutt', '_blank', 'norefe
       <main class="text-5xl md:text-6xl font-bold">
         <h1 class="inline">
           <span
-            class="inline bg-gradient-to-r from-[#7B6A4B] via-[#B39F7B] to-[#7B6A4B] text-transparent bg-clip-text"
+            class="dark:drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.6)] inline bg-gradient-to-r from-[#7B6A4B] via-[#B39F7B] to-[#7B6A4B] text-transparent bg-clip-text"
           >
             Krutt
           </span>
-          brings Bitcoin to the mass.
+          brings Bitcoin to the mass
         </h1>
-        Integrating
+        with
         <h2 class="inline">
           <span
             class="inline bg-gradient-to-r from-[#EB5E28] via-[#FCA311] to-[#BC13FE] text-transparent bg-clip-text"
           >
-            Lightning + Nostr
+            Lightning &amp; Nostr
           </span>
-          developers
+          liquidity unlocks.
         </h2>
       </main>
 
@@ -50,4 +50,5 @@ let openGitHub = () => window.open('https://github.com/krutt', '_blank', 'norefe
     </div>
     <HeroCards class="w-full" />
   </section>
+  <Sponsors />
 </template>

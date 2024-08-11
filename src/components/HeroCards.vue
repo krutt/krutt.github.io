@@ -20,6 +20,17 @@ import TayanCrest from '@/assets/tayan.svg'
 
 /* constants */
 const aesirettes = ['Bitcoind', 'LND Cluster', 'Mining dashboard']
+
+/* functions */
+let gitHubAesirRepo = () => {
+  window.open('http://github.com/krutt/aesir', '_blank', 'noreferrer, noopener')
+}
+let gitHubTayanRepo = () => {
+  window.open('http://github.com/krutt/tayan', '_blank', 'noreferrer, noopener')
+}
+let gitHubTayanPage = () => {
+  window.open('https://krutt.github.io/tayan', '_blank', 'noreferrer, noopener')
+}
 </script>
 <template>
   <div class="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
@@ -50,13 +61,7 @@ const aesirettes = ['Bitcoind', 'LND Cluster', 'Mining dashboard']
         <CardDescription> Regtest made easy </CardDescription>
       </CardHeader>
       <CardContent class="flex text-center pb-2">
-        <Button
-          rel="noreferrer noopener"
-          href="https://github.com/krutt/aesir"
-          size="icon"
-          target="_blank"
-          variant="ghost"
-        >
+        <Button @click.prevent="gitHubAesirRepo" size="icon" variant="ghost">
           <span class="sr-only">GitHub icon</span>
           <Github class="h-5 mx-2 w-5" />
         </Button>
@@ -78,9 +83,7 @@ const aesirettes = ['Bitcoind', 'LND Cluster', 'Mining dashboard']
         <TayanCrest
           class="absolute grayscale-[0%] -top-12 left-[100px] rounded-full w-24 h-24 aspect-square object-cover"
         />
-        <CardTitle class="text-center mt-10">
-          Tayan
-        </CardTitle>
+        <CardTitle class="text-center mt-10"> Tayan </CardTitle>
         <CardDescription class="text-center">
           Successor to StatechainJS
           <p class="flex items-center justify-between mt-2 text-sm">
@@ -90,13 +93,7 @@ const aesirettes = ['Bitcoind', 'LND Cluster', 'Mining dashboard']
         </CardDescription>
       </CardHeader>
       <CardContent class="flex col-span-2 text-center pb-2">
-        <Button
-          rel="noreferrer noopener"
-          href="https://github.com/krutt/tayan"
-          size="icon"
-          target="_blank"
-          variant="ghost"
-        >
+        <Button @click.prevent="gitHubTayanRepo" size="icon" variant="ghost">
           <span class="sr-only">GitHub icon</span>
           <Github class="h-5 mx-2 w-5" />
         </Button>
@@ -105,11 +102,11 @@ const aesirettes = ['Bitcoind', 'LND Cluster', 'Mining dashboard']
       <hr class="w-4/5 m-auto mb-4" />
       <CardFooter class="flex">
         <Button
+          @click.prevent="gitHubTayanPage"
           class="w-full text-md text-center"
-          href="https://krutt.github.io/tayan"
-          rel="noreferrer noopener"
-          target="_blank"
-          variant="outline">Launch on Signet</Button>
+          variant="outline"
+          >Launch on Signet</Button
+        >
       </CardFooter>
     </Card>
     <Card

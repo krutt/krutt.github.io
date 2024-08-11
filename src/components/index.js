@@ -1,5 +1,6 @@
 /* ~~/src/components/index.js */
 
+export { default as About } from './About.vue'
 export { default as Hero } from './Hero.vue'
 export { default as HeroCards } from './HeroCards.vue'
 export { default as Navbar } from './Navbar.vue'

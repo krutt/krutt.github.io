@@ -61,9 +61,18 @@ const pins = ['Bitcoin', 'Lightning', 'Nostr', 'Secp256k1', 'Cryptography', '']
         </CardHeader>
         <CardContent>{{ block.description }}</CardContent>
         <CardFooter>
-          <BlockAdept v-if="block.image == 'adept'" />
-          <BlockAware v-if="block.image == 'aware'" />
-          <BlockLearn v-if="block.image == 'learn'" />
+          <BlockAdept
+            class="dark:drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)] drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]"
+            v-if="block.image == 'adept'"
+          />
+          <BlockAware
+            class="dark:drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)] drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]"
+            v-if="block.image == 'aware'"
+          />
+          <BlockLearn
+            class="dark:drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)] drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]"
+            v-if="block.image == 'learn'"
+          />
         </CardFooter>
       </Card>
     </div>

@@ -9,7 +9,7 @@ const sponsors: string[] = ['Krutt', 'collective', 'needs', 'your', 'support']
 <template>
   <section id="sponsors" class="container pt-24 sm:py-32">
     <h2
-      class="text-center text-md lg:text-xl font-bold mb-8 dark:drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.6)]"
+      class="text-center text-md lg:text-xl font-bold mb-8 dark:drop-shadow-[0_1px_1px_rgba(255,255,255,0.6)]"
     >
       <span
         class="bg-gradient-to-r from-[#7B6A4B] via-[#B39F7B] to-[#7B6A4B] text-transparent bg-clip-text"

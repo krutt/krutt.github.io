@@ -36,12 +36,12 @@ const statistics: Statistics[] = [
         <div class="bg-green-0 flex flex-col justify-between">
           <div class="pb-6">
             <h2 class="text-3xl md:text-4xl font-bold">
+              About
               <span
                 class="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text"
               >
-                About
+                Krutt
               </span>
-              Krutt
             </h2>
             <p class="text-xl text-muted-foreground mt-4">
               Krutt collective is a project under the supervision of WOW Robot trading firm with

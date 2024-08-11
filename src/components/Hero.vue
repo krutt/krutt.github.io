@@ -16,7 +16,7 @@ let openGitHub = () => window.open('https://github.com/krutt', '_blank', 'norefe
       <main class="text-5xl md:text-6xl font-bold">
         <h1 class="inline">
           <span
-            class="dark:drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.6)] inline bg-gradient-to-r from-[#7B6A4B] via-[#B39F7B] to-[#7B6A4B] text-transparent bg-clip-text"
+            class="dark:drop-shadow-[0_2px_2px_rgba(255,255,255,0.6)] inline bg-gradient-to-r from-[#7B6A4B] via-[#B39F7B] to-[#7B6A4B] text-transparent bg-clip-text"
           >
             Krutt
           </span>

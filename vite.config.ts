@@ -8,7 +8,7 @@ import vue from '@vitejs/plugin-vue'
 import tailwind from 'tailwindcss'
 
 export default defineConfig({
-  base: '/crisp',
+  base: '/',
   css: {
     postcss: {
       plugins: [tailwind(), autoPrefixer()],

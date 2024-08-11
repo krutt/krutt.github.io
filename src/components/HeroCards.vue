@@ -90,7 +90,7 @@ let gitHubTayanPage = () => {
             <Badge variant="secondary"> JavaScript </Badge>
             <Badge variant="secondary"> Statechain </Badge>
             <Badge class="bg-gradient-to-r from-[#EB5E28] to-[#FCA311] via-[#EB5E28]">
-                Alpha
+              Alpha
             </Badge>
           </p>
         </CardDescription>

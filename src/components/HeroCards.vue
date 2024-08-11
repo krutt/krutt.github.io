@@ -89,6 +89,9 @@ let gitHubTayanPage = () => {
           <p class="flex items-center justify-between mt-2 text-sm">
             <Badge variant="secondary"> JavaScript </Badge>
             <Badge variant="secondary"> Statechain </Badge>
+            <Badge class="bg-gradient-to-r from-[#EB5E28] to-[#FCA311] via-[#EB5E28]">
+                Alpha
+            </Badge>
           </p>
         </CardDescription>
       </CardHeader>

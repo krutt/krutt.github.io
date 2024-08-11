@@ -58,7 +58,7 @@ let openGitHub = () => window.open('https://github.com/krutt', '_blank', 'norefe
                 <span class="sr-only">Menu Icon</span>
               </Menu>
             </SheetTrigger>
-            <SheetContent :side="left">
+            <SheetContent side="left">
               <SheetHeader>
                 <SheetTitle class="font-bold text-xl"> Krutt </SheetTitle>
               </SheetHeader>

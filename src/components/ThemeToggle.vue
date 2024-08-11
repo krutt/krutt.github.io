@@ -1,4 +1,6 @@
-<script setup>
+<script lang="ts" setup>
+/* imports */
+import { useColorMode } from '@vueuse/core'
 /* vectors */
 import { Button } from '@/components/ui/button'
 import { Moon, Sun } from 'lucide-vue-next'

@@ -17,13 +17,7 @@ export default defineConfig({
   plugins: [
     autoImport({
       include: [/\.[jt]sx?$/, /\.vue$/, /\.vue\?vue/],
-      imports: [
-        {
-          '@vueuse/core': ['useColorMode'],
-        },
-        'pinia',
-        'vue',
-      ],
+      imports: ['pinia', 'vue'],
     }),
     svgLoader(),
     vue(),

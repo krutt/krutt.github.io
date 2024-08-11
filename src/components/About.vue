@@ -44,15 +44,15 @@ const statistics: Statistics[] = [
               Krutt
             </h2>
             <p class="text-xl text-muted-foreground mt-4">
-              Krutt collective is a project under the supervision of WOW Robot trading firm
-              with retail-friendly robot-trading solutions tapping into the ever fleeting gains,
+              Krutt collective is a project under the supervision of WOW Robot trading firm with
+              retail-friendly robot-trading solutions tapping into the ever fleeting gains,
               spear-headed by Bitcoin. Krutt began to explore the real possibilities of the future
-              of crypto-economics in understanding global liquidity without defying evidence seen
-              in market sentiments. Bitcoin will outlast all of us, but the next 1,000,000 Bitcoiner
+              of crypto-economics in understanding global liquidity without defying evidence seen in
+              market sentiments. Bitcoin will outlast all of us, but the next 1,000,000 Bitcoiner
               will need a jumping off point into the Bitcoin rabbit-hole and we see problems in need
               of solving. The collective learns from teaching and Krutt learns from creating concise
-              and condense technical contents in the form of Facebook Reels targeting the ever-expanding
-              audience in South East Asia.
+              and condense technical contents in the form of Facebook Reels targeting the
+              ever-expanding audience in South East Asia.
             </p>
           </div>
           <section id="statistics">

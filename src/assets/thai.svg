@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg
+  version='1.1'
+  viewBox='0 0 512 512'
+  xmlns='http://www.w3.org/2000/svg'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:svgjs='http://svgjs.dev/svgjs'
+  >
+  <g
+    clip-rule='evenodd'
+    fill-rule='evenodd'
+    >
+    <path
+      d='M0 0h512v512H0z'
+      fill='#EEE'
+      />
+    <path
+      d='
+        M512 0
+        H0
+        v85.3
+        h512
+        V0Z
+        m0 426.7
+        H0
+        V512
+        h512
+        v-85.3Z
+      '
+      fill='#D80027'
+      />
+    <path
+      d='
+        M0 170.7
+        h512
+        v170.7H0z
+      '
+      fill='#026'
+      />
+  </g>
+</svg>

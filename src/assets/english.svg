@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg
+  version='1.1'
+  viewBox='0 0 512 512'
+  xmlns='http://www.w3.org/2000/svg'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:svgjs='http://svgjs.dev/svgjs'
+  >
+  <g
+    clip-rule='evenodd'
+    fill-rule='evenodd'
+    >
+    <path
+      fill='#0052B4'
+      d='
+        M0 0
+        h512
+        v512H0z
+      '
+      />
+    <path
+      d='
+        M464 512
+        h48
+        v-48
+        L304 256 512 48
+        V0
+        h-48
+        L256 208 48 0
+        H0
+        v48
+        l208 208
+        L0 464
+        v48
+        h48
+        l208-208 208 208Z
+      '
+      fill='#EEE'
+      />
+    <path
+      d='
+        M512 320
+        V192
+        H320
+        V0
+        H192
+        v192
+        H0
+        v128
+        h192
+        v192
+        h128
+        V320
+        h192Z
+      '
+      fill='#EEE'
+    />
+    <path
+      d='
+        M512 288
+        v-64
+        H288
+        V0
+        h-64
+        v224
+        H0
+        v64
+        h224
+        v224
+        h64
+        V288
+        h224Z
+      '
+      fill='#D80027'
+    />
+    <path
+      d='
+        M0 32
+        V0
+        l192 192
+        h-32
+        L0 32Z
+        m512 448
+        v32
+        L320 320
+        h32
+        l160 160Z
+        M32 512
+        H0
+        l192-192
+        v32
+        L32 512Z
+        M480 0
+        h32
+        L320 192
+        v-32
+        L480 0Z
+      '
+      fill='#D80027'
+    />
+  </g>
+</svg>

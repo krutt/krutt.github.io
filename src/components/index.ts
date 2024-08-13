@@ -2,6 +2,7 @@
 
 export { default as About } from './About.vue'
 export { default as BuildingBlocks } from './BuildingBlocks.vue'
+export { default as Footer } from './Footer.vue'
 export { default as Hero } from './Hero.vue'
 export { default as HeroCards } from './HeroCards.vue'
 export { default as Navbar } from './Navbar.vue'

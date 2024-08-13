@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 /* components */
-import { About, BuildingBlocks, Hero, Navbar, Sponsors } from '@/components'
+import { About, BuildingBlocks, Footer, Hero, Navbar, Sponsors } from '@/components'
 </script>
 
 <template>
@@ -9,4 +9,5 @@ import { About, BuildingBlocks, Hero, Navbar, Sponsors } from '@/components'
   <Sponsors />
   <About />
   <BuildingBlocks />
+  <Footer />
 </template>

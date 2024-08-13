@@ -7,4 +7,3 @@
 [![Size](https://img.shields.io/github/repo-size/krutt/krutt-github-io)](https://github.com/krutt/tayan)
 [![Last commit](https://img.shields.io/github/last-commit/krutt/krutt-github-io/master)](https://github.com/krutt/krutt-github-io)
 [![Krutt banner](static/krutt-banner.svg)](https://github.com/krutt/krutt-github-io/blob/master/static/krutt-banner.svg)
-

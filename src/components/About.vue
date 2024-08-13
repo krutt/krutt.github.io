@@ -23,7 +23,7 @@ const statistics: Statistics[] = [
   },
   {
     quantity: '1',
-    description: 'Bitcoiner',
+    description: 'Blockchain',
   },
 ]
 </script>

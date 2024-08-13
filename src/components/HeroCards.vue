@@ -25,11 +25,11 @@ const aesirettes = ['Bitcoind', 'LND Cluster', 'Mining dashboard']
 let gitHubAesirRepo = () => {
   window.open('http://github.com/krutt/aesir', '_blank', 'noreferrer, noopener')
 }
-let gitHubTayanRepo = () => {
-  window.open('http://github.com/krutt/tayan', '_blank', 'noreferrer, noopener')
-}
 let gitHubTayanPage = () => {
   window.open('https://krutt.github.io/tayan', '_blank', 'noreferrer, noopener')
+}
+let gitHubTayanRepo = () => {
+  window.open('http://github.com/krutt/tayan', '_blank', 'noreferrer, noopener')
 }
 </script>
 <template>

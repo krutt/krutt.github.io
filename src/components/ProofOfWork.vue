@@ -114,7 +114,7 @@ const repositories: Repository[] = [
 ]
 
 /* fuctions */
-let windowOpen = repoUrl => {
+let windowOpen = (repoUrl: string) => {
   window.open(repoUrl, '_blank', 'noreferrer noopener')
 }
 </script>

@@ -1,11 +1,6 @@
 <script lang="ts" setup>
 /* components */
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 /* vectors */
 import Cypherpunk from '@/assets/cypherpunk.svg'
 import { Aperture, Donut, FlameKindling } from 'lucide-vue-next'
@@ -20,7 +15,8 @@ interface Step {
 /* constants */
 let steps: Step[] = [
   {
-    description: 'Find ideas you would like to work on that you cannot live without when using Bitcoin.',
+    description:
+      'Find ideas you would like to work on that you cannot live without when using Bitcoin.',
     icon: 'aperture',
     title: 'Capture Spark',
   },
@@ -30,7 +26,8 @@ let steps: Step[] = [
     title: 'Take a Bite',
   },
   {
-    description: 'Once caught on, make sure to give it your all to kindle the sparks of genius you had and introduce the idea to the collective.',
+    description:
+      'Once caught on, make sure to give it your all to kindle the sparks of genius you had and introduce the idea to the collective.',
     icon: 'flame-kindling',
     title: 'Kindle Greatness',
   },

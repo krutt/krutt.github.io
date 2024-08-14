@@ -16,7 +16,7 @@ import { Github } from 'lucide-vue-next'
 
 /* schemas */
 interface Repository {
-  badges: { text: string; variant: 'ghost' | 'outline' | 'secondary' }[]
+  badges: { text: string; variant: 'default' | 'outline' | 'secondary' }[]
   content: string
   description: string
   imageUrl: string
@@ -30,15 +30,15 @@ const repositories: Repository[] = [
     badges: [
       {
         text: 'JavaScript',
-        variant: 'ghost',
+        variant: 'outline',
       },
       {
         text: 'Lightning',
-        variant: 'ghost',
+        variant: 'outline',
       },
       {
         text: 'Derivatives',
-        variant: 'ghost',
+        variant: 'outline',
       },
     ],
     content: 'Isolated-margin account for decentralized Bitcoin trading via the Lightning network.',
@@ -51,15 +51,15 @@ const repositories: Repository[] = [
     badges: [
       {
         text: 'TypeScript',
-        variant: 'ghost',
+        variant: 'outline',
       },
       {
         text: 'Lightning',
-        variant: 'ghost',
+        variant: 'outline',
       },
       {
         text: 'LSP',
-        variant: 'ghost',
+        variant: 'outline',
       },
     ],
     content: 'Rewritten wrapper for Lightning Network Daemon in TypeScript based on LNDHub',
@@ -72,15 +72,15 @@ const repositories: Repository[] = [
     badges: [
       {
         text: 'Python',
-        variant: 'ghost',
+        variant: 'outline',
       },
       {
         text: 'FastAPI',
-        variant: 'ghost',
+        variant: 'outline',
       },
       {
         text: 'Atomic Swap',
-        variant: 'ghost',
+        variant: 'outline',
       },
     ],
     content: 'Lightning Service Provider built on top of FastAPI asynchronous web framework',
@@ -93,15 +93,15 @@ const repositories: Repository[] = [
     badges: [
       {
         text: 'JavaScript',
-        variant: 'ghost',
+        variant: 'outline',
       },
       {
         text: 'Statechain',
-        variant: 'ghost',
+        variant: 'outline',
       },
       {
         text: 'Signet',
-        variant: 'ghost',
+        variant: 'outline',
       },
     ],
     content:
@@ -163,7 +163,7 @@ let windowOpen = repoUrl => {
           <p>{{ repository.content }}</p>
         </CardContent>
         <CardFooter>
-          <Button @click.prevent="windowOpen(repository.repoUrl)" size="icon" variant="ghost">
+          <Button @click.prevent="windowOpen(repository.repoUrl)" size="icon" variant="outline">
             <span class="sr-only">GitHub icon</span>
             <Github class="h-5 mx-2 w-5" />
           </Button>

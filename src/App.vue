@@ -16,9 +16,9 @@ import {
   <Navbar />
   <Hero />
   <Sponsors />
-  <About />
+  <GetInvolved />
   <BuildingBlocks />
   <ProofOfWork />
-  <GetInvolved />
+  <About />
   <Footer />
 </template>

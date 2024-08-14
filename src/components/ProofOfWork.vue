@@ -16,7 +16,7 @@ import { Github } from 'lucide-vue-next'
 
 /* schemas */
 interface Repository {
-  badges: { title: string; variant: string }[]
+  badges: { text: string; variant: 'ghost' | 'outline' | 'secondary' }[]
   content: string
   description: string
   imageUrl: string

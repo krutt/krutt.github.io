@@ -127,8 +127,8 @@ let windowOpen = repoUrl => {
       </span>
     </h2>
     <p class="mt-4 mb-10 text-xl text-muted-foreground">
-      Krutt has been established in 2023 and work tirelessly to make Bitcoin more approachable
-      to Bitdevs everywhere, without layers of abstractions to obscure development directions.
+      Krutt has been established in 2023 and work tirelessly to make Bitcoin more approachable to
+      Bitdevs everywhere, without layers of abstractions to obscure development directions.
     </p>
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
       <Card

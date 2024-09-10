@@ -32,7 +32,7 @@ const statistics: Statistics[] = [
   <section id="about" class="container py-24 sm:py-32">
     <div class="bg-muted/50 border rounded-lg py-12">
       <div class="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
-        <Glist class="rounded-lg md:min-w-[384px] min-w-[200px]"/>
+        <Glist class="rounded-lg md:min-w-[384px] min-w-[200px]" />
         <div class="bg-green-0 flex flex-col justify-between">
           <div class="pb-6">
             <h2 class="text-3xl md:text-4xl font-bold">

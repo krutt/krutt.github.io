@@ -1,13 +1,14 @@
 <script lang="ts" setup>
 // imports
 import { useColorMode, useWindowSize } from '@vueuse/core'
+import { Ref, onMounted, ref, watchEffect } from 'vue'
 
 // components
 import { ActivityCalendar } from '@/components'
 
 // composables
 const theme = useColorMode()
-const { width, height } = useWindowSize()
+const { width } = useWindowSize()
 
 // constants
 const colors = ['#FFFCF2', '#CCC5B9', '#FCA311', '#FF9900', '#EB5E28']
@@ -16,15 +17,15 @@ const colors = ['#FFFCF2', '#CCC5B9', '#FCA311', '#FF9900', '#EB5E28']
 let backgroundColor = ref('#000')
 let cellBorderRadius = ref(4)
 let cellLength = ref(20)
-let contributions = ref([])
+let contributions: Ref<{ date: string; count: number }[]> = ref([])
 let fontColor = ref('#fff')
 let weeks = ref(20)
 
 // lifecycle
 onMounted(async () => {
-  let activity = {}
+  let activity: { [key: string]: number } = {}
   for (let page = 0; page <= 3; page++) {
-    await new Promise(res => setTimeout(res, page * 800)) // delay 0.8s per page
+    await new Promise((res: any) => setTimeout(res, page * 800)) // delay 0.8s per page
     let resp = await fetch(
       `https://api.github.com/users/aekasitt/events?page=${page}&per_page=100`,
       {
@@ -33,7 +34,7 @@ onMounted(async () => {
       }
     )
     if (!resp.ok) continue
-    let data = await resp.json()
+    let data: { created_at: string; type: string }[] = await resp.json()
     // data = data.filter(row => row.type == 'PushEvent' && !!row['org'] && row.org.login == 'krutt')
     data = data.filter(row => row.type == 'PushEvent')
     data.forEach(row => {

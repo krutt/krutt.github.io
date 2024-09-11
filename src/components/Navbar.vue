@@ -37,7 +37,7 @@ const routes: RouteProps[] = [
 
 /* functions */
 let openGitHub = () => window.open('https://github.com/krutt', '_blank', 'noreferrer, noopener')
-let openLink = (href) => window.open(href, '_blank', 'noreferrer, noopener')
+let openLink = (href: string) => window.open(href, '_blank', 'noreferrer, noopener')
 </script>
 
 <template>

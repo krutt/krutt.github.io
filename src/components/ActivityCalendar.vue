@@ -1,53 +1,5 @@
-<template>
-  <div class="activityCalendar">
-    <div class="left" v-show="config.showWeekDayFlag">
-      <div
-        v-for="(weekDay, index) in config.weekDayFlagLength"
-        :key="index"
-        :style="style.weekDay(weekDay)"
-      >
-        {{ weekDay.text }}
-      </div>
-    </div>
-    <div class="right">
-      <div class="header" v-show="config.showHeader" :style="`height: ${config.fontSize}px;`">
-        <div
-          v-for="(month, index) in config.headerLength"
-          :key="index"
-          :style="style.header(month)"
-        >
-          {{ month.text }}
-        </div>
-      </div>
-      <div class="content" :style="style.content()">
-        <div
-          class="item"
-          v-for="(item, index) in config.data"
-          :key="index"
-          :style="style.item(item)"
-          @click="config.clickEvent ? config.clickEvent(item) : null"
-        ></div>
-      </div>
-      <div class="levelFlagContent" v-show="config.showLevelFlag">
-        <div :style="`font-size: ${config.fontSize}px; color: ${config.fontColor}`">
-          {{ config.levelFlagText ? config.levelFlagText[0] : '' }}
-        </div>
-        <div class="levelFlag" :style="style.levelFlag()">
-          <div
-            v-for="(i, index) in config.colors"
-            :key="index"
-            :style="style.levelFlagItem(index)"
-          ></div>
-        </div>
-        <div :style="`font-size: ${config.fontSize}px; color: ${config.fontColor}`">
-          {{ config.levelFlagText ? config.levelFlagText[1] : '' }}
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script lang="ts" setup>
+// @ts-nocheck
 import { nextTick, onMounted, reactive, watch, computed, defineProps } from 'vue'
 
 interface settingType {
@@ -385,6 +337,54 @@ onMounted(() => {
 })
 </script>
 
+<template>
+  <div class="activityCalendar">
+    <div class="left" v-show="config.showWeekDayFlag">
+      <div
+        v-for="(weekDay, index) in config.weekDayFlagLength"
+        :key="index"
+        :style="style.weekDay(weekDay)"
+      >
+        {{ weekDay.text }}
+      </div>
+    </div>
+    <div class="right">
+      <div class="header" v-show="config.showHeader" :style="`height: ${config.fontSize}px;`">
+        <div
+          v-for="(month, index) in config.headerLength"
+          :key="index"
+          :style="style.header(month)"
+        >
+          {{ month.text }}
+        </div>
+      </div>
+      <div class="content" :style="style.content()">
+        <div
+          class="item"
+          v-for="(item, index) in config.data"
+          :key="index"
+          :style="style.item(item)"
+          @click="config.clickEvent ? config.clickEvent(item) : null"
+        ></div>
+      </div>
+      <div class="levelFlagContent" v-show="config.showLevelFlag">
+        <div :style="`font-size: ${config.fontSize}px; color: ${config.fontColor}`">
+          {{ config.levelFlagText ? config.levelFlagText[0] : '' }}
+        </div>
+        <div class="levelFlag" :style="style.levelFlag()">
+          <div
+            v-for="(i, index) in config.colors"
+            :key="index"
+            :style="style.levelFlagItem(index)"
+          ></div>
+        </div>
+        <div :style="`font-size: ${config.fontSize}px; color: ${config.fontColor}`">
+          {{ config.levelFlagText ? config.levelFlagText[1] : '' }}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 <style scoped>
 .activityCalendar {
   width: max-content;

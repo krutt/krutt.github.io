@@ -24,7 +24,7 @@ let weeks = ref(20)
 onMounted(async () => {
   let activity = {}
   for (let page = 0; page <= 3; page++) {
-    await new Promise(res => setTimeout(res, page * 800))  // delay 0.8s per page
+    await new Promise(res => setTimeout(res, page * 800)) // delay 0.8s per page
     let resp = await fetch(
       `https://api.github.com/users/aekasitt/events?page=${page}&per_page=100`,
       {

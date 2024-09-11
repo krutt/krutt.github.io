@@ -46,7 +46,8 @@ let steps: Step[] = [
         </h2>
 
         <p class="text-muted-foreground text-xl mt-4 mb-8">
-          Krutt is an open collective of developers, designers and enthusiasts working toward the same goal.
+          Krutt is an open collective of developers, designers and enthusiasts working toward the
+          same goal.
         </p>
 
         <div class="flex flex-col gap-8">

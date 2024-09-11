@@ -19,19 +19,22 @@ const blocks: Block[] = [
   {
     title: 'Discover Bitcoin',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.',
+      'The first discovery of Bitcoin and Bitcoiners happen via gathering of minds. Many who feel the fiat ' +
+      'world cannot satiate the curious minds turn to the bright orange pill for peaceful money revolution.',
     image: 'aware',
   },
   {
     title: 'Build on Bitcoin',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.',
+      'Building is the best way to learn about how Bitcoin came to be. Cypherpunks with clean hands cannot ' +
+      'and shall not dictate the future of the only censorship-resistant proof-of-work money network.',
     image: 'learn',
   },
   {
     title: 'Understand Bitcoin',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.',
+      'Once we are deep in the rabbit-hole, the inevitable urge to invite others emerge. Lucky us that we ' +
+      'many talented philosophers, podcasters, programmers and people of great influence ready to help.',
     image: 'adept',
   },
 ]

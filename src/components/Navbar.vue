@@ -22,21 +22,22 @@ interface RouteProps {
 /* constants */
 const routes: RouteProps[] = [
   {
-    href: '#aesir',
+    href: 'https://github.com/krutt/aesir',
     label: 'Aesir',
   },
   {
-    href: '#kogai',
+    href: 'https://github.com/krutt/kogai',
     label: 'Kogai',
   },
   {
-    href: '#tayan',
+    href: 'https://krutt.github.io/tayan',
     label: 'Tayan',
   },
 ]
 
 /* functions */
 let openGitHub = () => window.open('https://github.com/krutt', '_blank', 'noreferrer, noopener')
+let openLink = (href) => window.open(href, '_blank', 'noreferrer, noopener')
 </script>
 
 <template>
@@ -64,8 +65,8 @@ let openGitHub = () => window.open('https://github.com/krutt', '_blank', 'norefe
               </SheetHeader>
               <nav class="flex flex-col justify-center items-center gap-2 mt-4">
                 <Button
+                  @click.prevent="openLink(route.href)"
                   :key="route.label"
-                  :href="route.href"
                   rel="noreferrer noopener"
                   v-for="route in routes"
                   variant="link"
@@ -88,6 +89,7 @@ let openGitHub = () => window.open('https://github.com/krutt', '_blank', 'norefe
         </span>
         <nav class="hidden md:flex gap-2">
           <Button
+            @click.prevent="openLink(route.href)"
             :href="route.href"
             :key="route.label"
             class="text-[17px]"

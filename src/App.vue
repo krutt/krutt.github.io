@@ -3,7 +3,6 @@
 import {
   About,
   BuildingBlocks,
-  Contributions,
   Footer,
   GetInvolved,
   Hero,
@@ -17,7 +16,6 @@ import {
   <Navbar />
   <Hero />
   <Sponsors />
-  <Contributions />
   <GetInvolved />
   <BuildingBlocks />
   <ProofOfWork />

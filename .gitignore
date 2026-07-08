@@ -1,14 +1,21 @@
-# Environment Variables
-**/.env
+### envvars ###
+.env
 
-# Node
+
+### node ###
 dist
 node_modules
 
-# MacOS
-**/.DS_Store
 
-# Workspace settings
+### macos ###
+.DS_Store
+
+
+### workspaces ###
+.crush
+.cursor
+.editorconfig
 .idea
 .ignore
 .vscode
+.zed

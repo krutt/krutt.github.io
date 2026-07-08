@@ -9,6 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - id: checkout
+        name: Checkout
+        uses: actions/checkout@v6
+
       - id: use-node-toolchain
         name: Use Node toolchain
         uses: actions/setup-node@v4

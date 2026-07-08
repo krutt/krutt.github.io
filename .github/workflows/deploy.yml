@@ -13,6 +13,11 @@ jobs:
         name: Checkout
         uses: actions/checkout@v6
 
+      - id: remove-package-manager-from-package-json
+        name: Remove packageManager attribute from package.json
+        run: |-
+          sed -i 's/[ \t]*"packageManager":[ \t]*".*",//g' package.json
+
       - id: use-node-toolchain
         name: Use Node toolchain
         uses: actions/setup-node@v4

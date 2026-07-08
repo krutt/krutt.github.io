@@ -4,12 +4,12 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+	Card,
+	CardContent,
+	CardDescription,
+	CardFooter,
+	CardHeader,
+	CardTitle,
 } from '@/components/ui/card'
 
 /* vectors */
@@ -23,13 +23,13 @@ const aesirettes = ['Bitcoind', 'LND Cluster', 'Mining dashboard']
 
 /* functions */
 let gitHubAesirRepo = () => {
-  window.open('http://github.com/krutt/aesir', '_blank', 'noreferrer, noopener')
+	window.open('http://github.com/krutt/aesir', '_blank', 'noreferrer, noopener')
 }
 let gitHubTayanPage = () => {
-  window.open('https://krutt.github.io/tayan', '_blank', 'noreferrer, noopener')
+	window.open('https://krutt.github.io/tayan', '_blank', 'noreferrer, noopener')
 }
 let gitHubTayanRepo = () => {
-  window.open('http://github.com/krutt/tayan', '_blank', 'noreferrer, noopener')
+	window.open('http://github.com/krutt/tayan', '_blank', 'noreferrer, noopener')
 }
 </script>
 <template>
@@ -40,7 +40,7 @@ let gitHubTayanRepo = () => {
     >
       <CardHeader class="flex flex-row items-center gap-4 pb-2">
         <Avatar>
-          <AvatarImage alt="" src="https://avatars.githubusercontent.com/u/3035165?v=4&size=64" />
+          <AvatarImage alt="" src="" />
           <AvatarFallback>AG</AvatarFallback>
         </Avatar>
         <div class="flex flex-col">

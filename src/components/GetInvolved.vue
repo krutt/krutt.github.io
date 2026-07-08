@@ -2,35 +2,34 @@
 /* components */
 import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 /* vectors */
-import Cypherpunk from '@/assets/cypherpunk.svg'
 import { Aperture, Donut, FlameKindling } from 'lucide-vue-next'
 
 /* schemas */
 interface Step {
-  title: string
-  description: string
-  icon: string
+	title: string
+	description: string
+	icon: string
 }
 
 /* constants */
 let steps: Step[] = [
-  {
-    description:
-      'Find ideas you would like to work on that you cannot live without when using Bitcoin.',
-    icon: 'aperture',
-    title: 'Capture Spark',
-  },
-  {
-    description: 'Make a use-case analysis and an improvement proposal to see it become reality.',
-    icon: 'donut',
-    title: 'Take a Bite',
-  },
-  {
-    description:
-      'Once caught on, make sure to give it your all to kindle the sparks of genius you had and introduce the idea to the collective.',
-    icon: 'flame-kindling',
-    title: 'Kindle Greatness',
-  },
+	{
+		description:
+			'Find ideas you would like to work on that you cannot live without when using Bitcoin.',
+		icon: 'aperture',
+		title: 'Capture Spark',
+	},
+	{
+		description: 'Make a use-case analysis and an improvement proposal to see it become reality.',
+		icon: 'donut',
+		title: 'Take a Bite',
+	},
+	{
+		description:
+			'Once caught on, make sure to give it your all to kindle the sparks of genius you had and introduce the idea to the collective.',
+		icon: 'flame-kindling',
+		title: 'Kindle Greatness',
+	},
 ]
 </script>
 
@@ -66,7 +65,11 @@ let steps: Step[] = [
           </Card>
         </div>
       </div>
-      <Cypherpunk class="w-[300px] md:w-[500px] lg:w-[600px]" />
+      <img
+        alt='Cypherpunk'
+        class='w-[300px] md:w-[500px] lg:w-[600px]'
+        src='/cypherpunk.png'
+        >
     </div>
   </section>
 </template>

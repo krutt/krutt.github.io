@@ -2,37 +2,36 @@
 /* imports */
 import { Button } from '@/components/ui/button'
 import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
+	NavigationMenu,
+	NavigationMenuItem,
+	NavigationMenuList,
 } from '@/components/ui/navigation-menu'
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 import { ThemeToggle } from '@/components'
 
 /* vectors */
 import { Github, Menu } from 'lucide-vue-next'
-import KruttCrest from '@/assets/krutt.svg'
 
 /* schemas */
 interface RouteProps {
-  href: string
-  label: string
+	href: string
+	label: string
 }
 
 /* constants */
 const routes: RouteProps[] = [
-  {
-    href: 'https://github.com/krutt/aesir',
-    label: 'Aesir',
-  },
-  {
-    href: 'https://github.com/krutt/kogai',
-    label: 'Kogai',
-  },
-  {
-    href: 'https://krutt.github.io/tayan',
-    label: 'Tayan',
-  },
+	{
+		href: 'https://github.com/krutt/aesir',
+		label: 'Aesir',
+	},
+	{
+		href: 'https://github.com/krutt/kogai',
+		label: 'Kogai',
+	},
+	{
+		href: 'https://krutt.github.io/tayan',
+		label: 'Tayan',
+	},
 ]
 
 /* functions */
@@ -48,7 +47,11 @@ let openLink = (href: string) => window.open(href, '_blank', 'noreferrer, noopen
       <NavigationMenuList class="container h-14 px-4 w-screen flex justify-between">
         <NavigationMenuItem class="font-bold flex">
           <RouterLink class="ml-2 font-bold text-xl flex" to="/">
-            <KruttCrest class="inline h-8 mr-2 w-8" />
+            <img
+              alt='KruttCrest'
+              class='inline h-8 mr-2 w-8'
+              src='/krutt.png'
+              />
             Krutt
           </RouterLink>
         </NavigationMenuItem>

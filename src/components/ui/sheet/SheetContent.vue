@@ -1,25 +1,25 @@
 <script setup lang="ts">
 import { type HTMLAttributes, computed } from 'vue'
 import {
-  DialogClose,
-  DialogContent,
-  type DialogContentEmits,
-  type DialogContentProps,
-  DialogOverlay,
-  DialogPortal,
-  useForwardPropsEmits,
+	DialogClose,
+	DialogContent,
+	type DialogContentEmits,
+	type DialogContentProps,
+	DialogOverlay,
+	DialogPortal,
+	useForwardPropsEmits,
 } from 'radix-vue'
 import { Cross2Icon } from '@radix-icons/vue'
 import { type SheetVariants, sheetVariants } from '.'
 import { cn } from '@/lib/utils'
 
 interface SheetContentProps extends DialogContentProps {
-  class?: HTMLAttributes['class']
-  side?: SheetVariants['side']
+	class?: HTMLAttributes['class']
+	side?: SheetVariants['side']
 }
 
 defineOptions({
-  inheritAttrs: false,
+	inheritAttrs: false,
 })
 
 const props = defineProps<SheetContentProps>()
@@ -27,9 +27,9 @@ const props = defineProps<SheetContentProps>()
 const emits = defineEmits<DialogContentEmits>()
 
 const delegatedProps = computed(() => {
-  const { class: _, side, ...delegated } = props
+	const { class: _, side, ...delegated } = props
 
-  return delegated
+	return delegated
 })
 
 const forwarded = useForwardPropsEmits(delegatedProps, emits)

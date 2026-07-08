@@ -3,12 +3,12 @@
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+	Card,
+	CardContent,
+	CardDescription,
+	CardFooter,
+	CardHeader,
+	CardTitle,
 } from '@/components/ui/card'
 
 /* vectors */
@@ -16,106 +16,106 @@ import { Github } from 'lucide-vue-next'
 
 /* schemas */
 interface Repository {
-  badges: { text: string; variant: 'default' | 'outline' | 'secondary' }[]
-  content: string
-  description: string
-  imageUrl: string
-  name: string
-  repoUrl: string
+	badges: { text: string; variant: 'default' | 'outline' | 'secondary' }[]
+	content: string
+	description: string
+	imageUrl: string
+	name: string
+	repoUrl: string
 }
 
 /* constants */
 const repositories: Repository[] = [
-  {
-    badges: [
-      {
-        text: 'JavaScript',
-        variant: 'outline',
-      },
-      {
-        text: 'Lightning',
-        variant: 'outline',
-      },
-      {
-        text: 'Derivatives',
-        variant: 'outline',
-      },
-    ],
-    content: 'Isolated-margin account for decentralized Bitcoin trading via the Lightning network.',
-    description: 'Library for LNMarkets & More',
-    imageUrl: 'https://raw.githubusercontent.com/krutt/othello/master/static/othello.svg',
-    name: 'Othello',
-    repoUrl: 'https://github.com/krutt/othello',
-  },
-  {
-    badges: [
-      {
-        text: 'TypeScript',
-        variant: 'outline',
-      },
-      {
-        text: 'Lightning',
-        variant: 'outline',
-      },
-      {
-        text: 'LSP',
-        variant: 'outline',
-      },
-    ],
-    content: 'Rewritten wrapper for Lightning Network Daemon in TypeScript based on LNDHub',
-    description: 'Modern Stack LSP',
-    imageUrl: 'https://raw.githubusercontent.com/krutt/lnd-krub/master/public/flag.svg',
-    name: 'LND Krub',
-    repoUrl: 'https://github.com/krutt/lnd-krub',
-  },
-  {
-    badges: [
-      {
-        text: 'Python',
-        variant: 'outline',
-      },
-      {
-        text: 'FastAPI',
-        variant: 'outline',
-      },
-      {
-        text: 'Atomic Swap',
-        variant: 'outline',
-      },
-    ],
-    content: 'Lightning Service Provider built on top of FastAPI asynchronous web framework',
-    description: 'API for Swaps and Transfers',
-    imageUrl: 'https://raw.githubusercontent.com/krutt/tesla-ball/master/static/tesla-ball.svg',
-    name: 'Tesla Ball',
-    repoUrl: 'https://github.com/krutt/tesla-ball',
-  },
-  {
-    badges: [
-      {
-        text: 'JavaScript',
-        variant: 'outline',
-      },
-      {
-        text: 'Statechain',
-        variant: 'outline',
-      },
-      {
-        text: 'Signet',
-        variant: 'outline',
-      },
-    ],
-    content:
-      "Tayan is a success to SuperTestnet's StatechainJS in a world where copying and pasting are outlawed.",
-    description: 'Collaborative UTXOs',
-    imageUrl: 'https://raw.githubusercontent.com/krutt/tayan/master/static/tayan.svg',
-    name: 'Tayan',
-    repoUrl: 'https://github.com/krutt/tayan',
-  },
+	{
+		badges: [
+			{
+				text: 'JavaScript',
+				variant: 'outline',
+			},
+			{
+				text: 'Lightning',
+				variant: 'outline',
+			},
+			{
+				text: 'Derivatives',
+				variant: 'outline',
+			},
+		],
+		content: 'Isolated-margin account for decentralized Bitcoin trading via the Lightning network.',
+		description: 'Library for LNMarkets & More',
+		imageUrl: '/othello.svg',
+		name: 'Othello',
+		repoUrl: 'https://github.com/krutt/othello',
+	},
+	{
+		badges: [
+			{
+				text: 'TypeScript',
+				variant: 'outline',
+			},
+			{
+				text: 'Lightning',
+				variant: 'outline',
+			},
+			{
+				text: 'LSP',
+				variant: 'outline',
+			},
+		],
+		content: 'Rewritten wrapper for Lightning Network Daemon in TypeScript based on LNDHub',
+		description: 'Modern Stack LSP',
+		imageUrl: '/flag.svg',
+		name: 'LND Krub',
+		repoUrl: 'https://github.com/krutt/lnd-krub',
+	},
+	{
+		badges: [
+			{
+				text: 'Python',
+				variant: 'outline',
+			},
+			{
+				text: 'FastAPI',
+				variant: 'outline',
+			},
+			{
+				text: 'Atomic Swap',
+				variant: 'outline',
+			},
+		],
+		content: 'Lightning Service Provider built on top of FastAPI asynchronous web framework',
+		description: 'API for Swaps and Transfers',
+		imageUrl: '/tesla-ball.svg',
+		name: 'Tesla Ball',
+		repoUrl: 'https://github.com/krutt/tesla-ball',
+	},
+	{
+		badges: [
+			{
+				text: 'JavaScript',
+				variant: 'outline',
+			},
+			{
+				text: 'Statechain',
+				variant: 'outline',
+			},
+			{
+				text: 'Signet',
+				variant: 'outline',
+			},
+		],
+		content:
+			"Tayan is a success to SuperTestnet's StatechainJS in a world where copying and pasting are outlawed.",
+		description: 'Collaborative UTXOs',
+		imageUrl: '/tayan.svg',
+		name: 'Tayan',
+		repoUrl: 'https://github.com/krutt/tayan',
+	},
 ]
 
 /* fuctions */
 let windowOpen = (repoUrl: string) => {
-  window.open(repoUrl, '_blank', 'noreferrer noopener')
+	window.open(repoUrl, '_blank', 'noreferrer noopener')
 }
 </script>
 <template>

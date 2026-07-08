@@ -8,21 +8,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4.1.7
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+      - name: Use Nodejs toolchain
+        uses: actions/setup-node@v4
         with:
-          version: 9.5.0
-      - name: install Nodejs
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          cache: 'pnpm'
+          node-version: 24
+          cache: 'yarn'
       - name: Install dependencies
-        run: pnpm install
+        run: yarn
       - name: Build project
-        run: pnpm run build
+        run: yarn build
       - name: Upload production-ready build files
         uses: actions/upload-pages-artifact@v3
         with:

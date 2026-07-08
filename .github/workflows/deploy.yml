@@ -8,25 +8,34 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Use Nodejs toolchain
+
+      - id: use-node-toolchain
+        name: Use Node toolchain
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: '24'
           cache: 'yarn'
-      - name: Install dependencies
+
+      - id: install-dependencies
+        name: Install dependencies
         run: yarn
-      - name: Build project
+
+      - id: build-single-page-application
+        name: Build Single Page Application
         run: yarn build
-      - name: Upload production-ready build files
+
+      - id: upload-production-build
+        name: Upload production-ready build files
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
           path: ./dist
 
+
   deploy:
+    if: github.ref == 'refs/heads/master'
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
 
     permissions:
       pages: write

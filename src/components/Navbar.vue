@@ -49,9 +49,14 @@ let openLink = (href: string) => window.open(href, '_blank', 'noreferrer, noopen
           <RouterLink class="ml-2 font-bold text-xl flex" to="/">
             <img
               alt='KruttCrest'
-              class='inline h-8 mr-2 w-8'
+              class='dark:inline h-8 hidden mr-2 w-8'
+              src='/krutt-dark.png'
+              >
+            <img
+              alt='KruttCrest'
+              class='dark:hidden h-8 inline mr-2 w-8'
               src='/krutt.png'
-              />
+              >
             Krutt
           </RouterLink>
         </NavigationMenuItem>

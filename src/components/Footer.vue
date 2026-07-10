@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 /* vectors */
 import { Facebook, Github } from 'lucide-vue-next'
-import KruttCrest from '@/assets/krutt.svg'
 </script>
 
 <template>
